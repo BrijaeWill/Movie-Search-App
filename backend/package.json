@@ -1,32 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "type":"module",
   "main": "server.js",
-  "dependencies": {
-    "bson": "^6.10.4",
-    "dotenv": "^17.2.2",
-    "memory-pager": "^1.5.0",
-    "mongodb": "^6.20.0",
-    "mongodb-connection-string-url": "^3.0.2",
-    "punycode": "^2.3.1",
-    "sparse-bitfield": "^3.0.3",
-    "tr46": "^5.1.1",
-    "webidl-conversions": "^7.0.0",
-     "axios": "^1.5.0",
-    "cors": "^2.8.5",
-     "express": "^4.18.2",
-    "whatwg-url": "^14.2.0"
-  },
-  "devDependencies": {
-     "nodemon": "^3.0.2"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.18.2",
+    "mongodb": "^6.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
