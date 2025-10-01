@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import moviesRouter from "./routes/movies.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,8 +12,7 @@ app.use(express.json());
 app.get("/", (_req, res) => {
   res.send(" Server is running!");
 });
-//Movie routes
-app.use("/api/movies", moviesRouter);
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
